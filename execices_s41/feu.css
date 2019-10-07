@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+}
+section{
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.fond{
+    background-color: rgb(64, 64, 64);
+    width: 150px;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    
+       
+}
+.element1{
+    background-color: red;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    opacity: 0.4;
+    animation: rouge 10s infinite;    
+}
+.element2{
+    background-color: orange;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    opacity: 0.5;
+    animation: orange 10s infinite;
+   
+}
+.element3{
+    background-color: green;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    opacity: 0.5;
+    animation: vert 10s infinite;
+  
+}
+div:hover{
+    opacity: 1;
+    
+   
+}
+
+@keyframes rouge{
+    0%, 31%{opacity: 0.5}
+    32%{opacity: 1} 
+    49%{opacity: 1} 
+    100%{opacity: 1} 
+}
+@keyframes orange{
+    0%, 21% {opacity: 0.5}
+    22%,30% {opacity: 1}
+    31%, 100%{opacity: 0.5}
+}
+@keyframes vert{
+    0%{opacity: 1}
+    20%{opacity: 1}
+    21%{opacity:0.5}
+    100%{opacity: 0.5}
+    
+}
+
+.fond2{
+    background-color: rgb(64, 64, 64);
+    width: 150px;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    
+       
+}
+
+.element4{
+    background-color: red;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    opacity: 0.4;
+    animation: rouge2 10s infinite;    
+}
+.element5{
+    background-color: orange;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    opacity: 0.5;
+    animation: orange2 10s infinite;
+   
+}
+.element6{
+    background-color: green;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    opacity: 0.5;
+    animation: vert2 10s infinite;
+  
+}
+div:hover{
+    opacity: 1;
+    
+   
+}
+
+@keyframes rouge2{
+    0%, 50%{opacity: 1}
+    51%, 80%{opacity: 0.5}
+    81%{opacity: 1} 
+    100%{opacity: 1} 
+     
+}
+@keyframes orange2{
+    0%, 70% {opacity: 0.5}
+    71%,80% {opacity: 1}
+    81%, 100%{opacity: 0.5}
+}
+@keyframes vert2{
+    0%, 50%{opacity: 0.5}
+    51%, 70%{opacity: 1}
+    71%, 100%{opacity:0.5}
+    
+    
+}
