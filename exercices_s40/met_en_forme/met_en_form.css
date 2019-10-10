@@ -1,0 +1,29 @@
+body{
+    width: 100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgb(102, 159,238);
+    height:15vh;
+    width:100vw;
+}
+nav{
+    background-color: rgb(74, 122, 188);
+    height:10vh;
+}
+section{
+    background-color: rgb(102, 159,238);
+    height:65vh;
+}
+aside{
+    background-color: rgb(75, 95, 121);
+    height:65vh;
+    width:20vw;
+    margin-left:80vw;
+}
+footer{
+    background-color: rgb(45, 68, 98);
+    height:10vh;
+}
