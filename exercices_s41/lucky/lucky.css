@@ -9,12 +9,19 @@
     background-size: cover;
     position: relative;
 }
+h2{}
 
 .joebarteam img{
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
     z-index: 10;
-    animation: joebar 5s infinite ease-in;
+    animation: joebar 6s infinite ease-out;
+}
+.joebarteam h1{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    animation: joebar 6s infinite ease-out;
 }
 
 @keyframes joebar{
@@ -27,17 +34,39 @@
 }
 .police img{
     position: absolute;
-    bottom:200px;
+    bottom:130px;
     animation: police 6s infinite linear;
     z-index: 5;
+    
+}
+.police h1{
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    animation: police 6s infinite linear;
 }
 @keyframes police{
-    0%{
+    0%{ 
+        left:0%;
+      
+    }
+    60%{
+        left: 55%;
+        bottom: 130px;
+        transform: rotatey(0deg);
+    }
+    61%, 99%{
+             
+        transform: rotatey(90deg);
+        
+    }
+
+    /* 0%{
         left: 0%;
     }
     100%{
         left: 88%;
-    }
+    } */
 }
 .car img{
     position: absolute;
@@ -58,14 +87,14 @@
 .helico img{
     position: absolute;
     bottom: 600px;
-    animation: helico 11s linear  infinite;
+    animation: helico 6s linear  infinite;
 
 }
 @keyframes helico{
     0%{top: 0%; left: 0%;
     }
     50%{
-        top:10%; left: 44%;
+        top:15%; left: 44%;
         /* width: 10%; height: auto; */
     }
     100%{top: 2%;left: 93%;
@@ -78,7 +107,7 @@
     z-index: 2;
     width: 35%;
     height: auto;
-    animation: bus 10s linear infinite;
+    animation: bus 10s linear ;
 }
 @keyframes bus{
     0%{
@@ -86,5 +115,28 @@
     }
     100%{
         right: 98%;
+    }
+}
+.explose img{
+    position:absolute;
+    bottom: 20px;
+    left: 47%;
+    width: 25%;
+    z-index: 8;
+    animation: explosion 6s linear infinite;
+
+}
+@keyframes explosion{
+    0%{
+        visibility: hidden;
+    }
+    1%, 60%{
+        visibility: hidden;
+    }
+    61%, 70%{
+        visibility: visible;
+    }
+    71%, 100%{
+        visibility: hidden;
     }
 }
