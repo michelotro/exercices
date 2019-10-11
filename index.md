@@ -1,6 +1,6 @@
-* <a href="exercices_s40/A_table/A_table.html">A_table</a>
+* <a href="exercices_s40/A_table/Atable.html">A table</a>
 * <a href="exercices_s40/latin_malin/latin_malin.html">latin malin</a>
-* <a href="exercices_s40/met_en-forme/met_en_form.html">met en forme</a>
+* <a href="exercices_s40/met_en_forme/met_en_form.html">met en forme</a>
 * <a href="exercices_s40/Tete_animee/homer.html">tête animée</a>
 * <a href="exercices_s40/trouve_le_css/trouve_le_css.html">Trouve le css</a>
 * <a href="exercices_s40/menu_css/Menu.html">latin malin</a>
