@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tours de manège</h1>
+
+<script>
+    //Boucle for
+    // let tour="";
+// if (tour == 0 ) console.log("Le manège démarre.");
+// for (tour=1; tour<=10; tour++)
+// console.log("C'est le tour n° " + tour);
+// if (tour = 10) console.log("Le manège s'arrête");
+
+
+//boucle while
+
+    let tour = 0;
+    if (tour==0 ) console.log("Le manège démarre.");
+while (tour < 10){
+    tour++;
+    console.log("C'est le tour n° " + tour);
+    if (tour===10) console.log("Le manège s'arrête");
+}
+
+let ticket = "";
+do{
+    ticket=prompt("Combien de tickets ?", "");
+ }
+ while(isNaN(ticket));
+
+
+
+
+</script>
+
+</body>
+</html>
