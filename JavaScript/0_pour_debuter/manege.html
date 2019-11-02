@@ -20,19 +20,27 @@
 
 //boucle while
 
+//     let tour = 0;
+//     if (tour==0 ) console.log("Le manège démarre.");
+// while (tour < 10){
+//     tour++;
+//     console.log("C'est le tour n° " + tour);
+//     if (tour===10) console.log("Le manège s'arrête");
+// }
+
+// pour faire plusieurs tours il faut jouer la variable tour DANS la variable ticket !!!!
+
+let ticket= "";
+ticket = prompt("Combien de tickets ?","")
+
+while(ticket>0){ ticket--;
+
     let tour = 0;
     if (tour==0 ) console.log("Le manège démarre.");
-while (tour < 10){
-    tour++;
-    console.log("C'est le tour n° " + tour);
+while (tour < 10){ tour++; console.log("C'est le tour n° " + tour);
     if (tour===10) console.log("Le manège s'arrête");
+    }
 }
-
-let ticket = "";
-do{
-    ticket=prompt("Combien de tickets ?", "");
- }
- while(isNaN(ticket));
 
 
 

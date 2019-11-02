@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Variable "for" pour definir les nombres de 1 à 100
+        // if... else if...else pour les conditions
+       
+        for ( let nombre = 1; nombre <=100;nombre++){
+            if(nombre %3 === 0 && nombre %5 === 0){
+                console.log(+nombre+" FizzBuzz");
+            }
+            else if(nombre %3 === 0){
+                console.log(+nombre+" Fizz");
+            }
+            else if(nombre %5 === 0){
+                console.log(+nombre+" Buzz");
+            }
+            else console.log(nombre);
+        }
+    </script>
+</body>
+</html>

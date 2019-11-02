@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .maClasse{
+            background-color: blue;
+            font-size: 3em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello
+    </div>
+    <script>
+        //affecter la div du html dans une variable
+        let maDiv=document.getElementsByTagName("div")[0];
+
+        //créer un id à la div du html
+        maDiv.id="divId";
+        console.log(document.getElementsByTagName("div")[0]);
+
+        //Ajouter une classe CSS à ma div
+
+        maDiv.className="maClasse";
+        
+    </script>
+</body>
+</html>
