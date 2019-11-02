@@ -8,10 +8,10 @@
 * <a href="exercices_s41/flipboard/flipboard.html">flipboard</a>
 * <a href="exercices_s41/lucky/lucky.html">lucky</a>
 * <a href="dojos/misterRobot.html">Mister Robot</a>
-* <a href="exercices/JavaScript/0_pour_debuter/nombreMystere.html">Nombre Mystère</a>
-* <a href="exercices/JavaScript/0_pour_debuter/manege.html">Tours de Manège</a>
-* <a href="exercices/JavaScript/0_pour_debuter/fizzbuzz.html">Fizz Buzz</a>
-* <a href="exercices/JavaScript/0_pour_debuter/tableMutiplication.html">Table de Multiplication</a>
-* <a href="exercices/JavaScript/1_exos_js/ex_1_et_2/index.html">JavaScript ex 1  et 2</a>
-* <a href="exercices/JavaScript/1_exos_js/ex_3/index.html">JavaScript ex 3</a>
-* <a href="exercices/JavaScript/1_exos_js/ex_4/index.html">JavaScript ex 4</a>
+* <a href="JavaScript/0_pour_debuter/nombreMystere.html">Nombre Mystère</a>
+* <a href="JavaScript/0_pour_debuter/manege.html">Tours de Manège</a>
+* <a href="JavaScript/0_pour_debuter/fizzbuzz.html">Fizz Buzz</a>
+* <a href="JavaScript/0_pour_debuter/tableMutiplication.html">Table de Multiplication</a>
+* <a href="JavaScript/1_exos_js/ex_1_et_2/index.html">JavaScript ex 1  et 2</a>
+* <a href="JavaScript/1_exos_js/ex_3/index.html">JavaScript ex 3</a>
+* <a href="JavaScript/1_exos_js/ex_4/index.html">JavaScript ex 4</a>
