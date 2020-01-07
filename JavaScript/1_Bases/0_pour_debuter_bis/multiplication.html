@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table de multiplication</title>
+</head>
+
+<body>
+    <h1>Table de multiplication</h1>
+
+
+    <script>
+
+
+
+        let nb = (prompt('Entrez un nombre'));
+
+        if (isNaN(nb) || nb % 1 !== 0) {
+            do {
+                nb = (prompt('un nombre entier et en chiffres'))
+            }
+
+            while (isNaN(nb) || nb % 1 !== 0);
+        }
+
+        let table = document.createElement('p');
+        table.textContent = `Table de multiplication par : ${nb}`;
+        document.querySelector('body').appendChild(table);
+
+        for (let i = 0; i <= 10; i++) {
+
+            let operation = document.createElement('p')
+            operation.textContent = `${i} x ${nb} = ` + i * nb;
+            document.querySelector('body').appendChild(operation);
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

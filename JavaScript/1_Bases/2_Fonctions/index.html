@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Répète Jacquot !</title>
+    <style>
+        div{
+            height: 20px;
+            width : 100px;
+            border: 1px solid black;
+            color: white;
+            background-color: blue;
+            border-radius: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>cliquez ici</div>
+    <script>
+        let maDiv = document.querySelector("div");
+            let section = document.createElement("section");
+        document.querySelector("body").insertBefore(section, document.querySelector('script'));
+        
+        
+        
+        // maDiv.addEventListener("click", ecritArticle);
+        maDiv.addEventListener('click', function(){
+            ecritArticle("monTitre", "monParagraphe");
+        })
+        //     let nbChapitre = prompt("Combien de chapitres voulez vous éditer ?");
+
+        // for ( let i = 1 ; i <= nbChapitre; i++){
+
+        //     let chapitre = document.createElement("h1");
+        //     chapitre.textContent = (prompt("Entrez le titre du chapitre n° : " + i )); 
+
+        //     let p1 = document.createElement("p");
+        //     p1.textContent = (prompt("Entrez le texte du  1er paragraphe :" ));
+
+        //     let p2 = document.createElement("p");
+        //     p2.textContent = (prompt("Entrez le texte du  2ème paragraphe :" ));
+
+        //     let p3 = document.createElement("p");
+        //     p3.textContent = (prompt("Entrez le texte du  3ème paragraphe :" ));
+
+        //     document.querySelector("section").appendChild(chapitre);
+        //     document.querySelector("section").appendChild(p1);
+        //     document.querySelector("section").appendChild(p2);
+        //     document.querySelector("section").appendChild(p3);
+        //     }
+        // });
+        
+        function ecritArticle(titre, paragraphe){
+            
+            
+            let chapitre = document.createElement("h1");
+            chapitre.textContent = titre; 
+
+            let p1 = document.createElement("p");
+            p1.textContent = paragraphe;
+
+            document.querySelector("section").appendChild(chapitre);
+            document.querySelector("section").appendChild(p1);
+        };
+
+        // ecritArticle();
+        
+
+    </script>
+</body>
+</html>

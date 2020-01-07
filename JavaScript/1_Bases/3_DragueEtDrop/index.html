@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag n' Drop</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height: 100%;
+            display: flex;flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .panier{
+            width: 200px;
+            height: 200px;
+            border: 3px dashed black;
+            border-radius: 50%;
+            top: 5vh;
+            left: 70vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .balle{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: 1px black solid;
+            border-radius: 50%;
+            
+            cursor: pointer;
+        }
+        .conteneur{
+            width: 300px;
+            height: 300px;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+   
+</head>
+<body>
+    
+        <!-- <div id="panier" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="conteneur" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="balle" draggable="true" ondragstart="drag(event)"></div>
+        </div> -->
+       <section>
+           <article class="panier"></article>
+        </section>
+        <section class="conteneur">
+           <article draggable="true" class="balle"></article>
+        </section>
+    
+        <script>
+
+// function allowDrop(ev) {
+//   ev.preventDefault();
+// }
+
+// function drag(ev) {
+//   ev.dataTransfer.setData("text/plain", ev.target.id);
+// }
+
+// function drop(ev) {
+//   ev.preventDefault();
+//   let data = ev.dataTransfer.getData("text/plain");
+//   ev.target.appendChild(document.getElementById(data));
+// }
+
+            
+            let panier = document.querySelector('.panier');
+            let balle = document.querySelector('.balle');
+            let conteneur = document.querySelector(".conteneur");
+            
+
+            balle.addEventListener('dragstart', dragStart);
+            balle.addEventListener('dragend', dragEnd);
+
+            // panier.addEventListener("dragstart", dragStart);
+            // panier.addEventListener('dragend', dragEnd);
+
+            function dragStart() {
+                console.log("start");
+                setTimeout(() => { this.className = 'invisible'}, 0);
+            }
+
+            function dragEnd() {
+                console.log("end");
+                this.className = "balle";
+                
+            }
+
+            panier.addEventListener('dragover', dragOver);
+            panier.addEventListener('dragenter', dragEnter);
+            panier.addEventListener('dragleave',dragLeave);
+            panier.addEventListener('drop',dragDrop);
+
+            conteneur.addEventListener('dragover', dragOver);
+            conteneur.addEventListener('dragenter', dragEnter);
+            conteneur.addEventListener('dragleave',dragLeave);
+            conteneur.addEventListener('drop',dragDrop);
+
+            function dragOver(e) {
+                e.preventDefault();
+                console.log('over');
+            }
+
+            function dragEnter(e) {
+                e.preventDefault();
+                console.log('enter');
+            }
+
+            function dragLeave() {
+                console.log('leave');
+            }
+
+            function dragDrop() {
+                console.log('dropped');
+                // this.className = 'balle';
+                this.append(balle);
+            }
+        </script>
+    
+    
+</body>
+</html>

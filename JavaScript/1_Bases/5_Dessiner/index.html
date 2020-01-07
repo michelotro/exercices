@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+</head>
+<body>
+    
+
+    <script>
+        let body = document.querySelector('body');
+        let balise = document.createElement("canvas");
+        balise.style.border = "1px solid black";
+        body.appendChild(balise);
+
+        let ctx = balise.getContext('2d');
+        
+
+        // ctx.fillStyle = 'rgb(200, 0, 0)';
+        // ctx.fillRect(5, 5, 50, 50);
+
+        // ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        // ctx.fillRect(30, 30, 50, 50);
+
+        let image = new Image();
+        let image2 = new Image();
+        let image3 = new Image();
+        image.src = "images/abricot.png"
+        image2.src = "images/cerises.png"
+        image3.src = "images/mangue.png"
+        
+        balise.onclick =function dessine(){
+            ctx.drawImage(image, 5, 5),
+            ctx.drawImage(image3, 120, 5),
+            ctx.drawImage(image2,60 ,5)
+            };
+
+        
+            
+        
+        
+    </script>
+</body>
+</html>

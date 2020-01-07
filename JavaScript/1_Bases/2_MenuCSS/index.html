@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menu.css">
+    <title>MenuCSS</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Alpha</a>
+                <ul>
+                    <li>Nu</li>
+                    <li>Phi</li>
+                    <li>Rau</li>
+                </ul>
+            </li>
+            <li><a href="#">Beta</a>
+                <ul>
+                    <li>Nu</li>
+                    <li>Phi</li>
+                    <li>Rau</li>
+                </ul>
+            </li>
+            <li><a href="#">Kappa</a>
+                <ul>
+                    <li>Nu</li>
+                    <li>Phi</li>
+                    <li>Rau</li>
+                </ul>
+            </li>
+            <li><a href="#">Zeta</a>
+                <ul>
+                    <li>Nu</li>
+                    <li>Phi</li>
+                    <li>Rau</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script>
+
+
+        let menu = document.querySelectorAll("a");
+        let sousMenu = document.querySelectorAll("nav li ul ");
+
+        console.log(menu);
+        console.log(sousMenu);
+
+
+        for (let i = 0; i < menu.length; i++) {
+
+            menu[i].addEventListener("click", function () {
+                if (sousMenu[i].style.visibility == "visible") {
+                    sousMenu[i].style.visibility = "hidden";
+                }
+                else {
+                    sousMenu[i].style.visibility = "visible";
+                    sousMenu[i].addEventListener("click", function () {
+                        sousMenu[i].style.visibility = "hidden";
+                    })
+                    sousMenu[i].addEventListener("mouseleave", function () {
+                        sousMenu[i].style.visibility = "hidden";
+                    })
+                }
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>

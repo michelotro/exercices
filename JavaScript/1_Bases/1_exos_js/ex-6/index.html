@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .classe1{
+            font-size: 3em;
+            background-color: red;
+        }
+        .classe2{
+            font-size: 2em;
+            background-color: blue;
+            color: white;
+        }
+        .classe3{
+            font-size: 4em;
+            border: 5px solid green ;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+            // Créer 2 paragraphes et ajouter du texte
+        // let body=document.querySelector('body');
+        let para1 = document.createElement("p");
+        para1.textContent = "Bonjour, Comment allez-vous aujourd'hui ?";
+
+        let para2 = document.createElement("p");
+        para2.textContent ="Je vais bien merci, et vous ?";
+
+            
+        //Inserer para1 avant le 1er enfant de "body" 
+
+            document.querySelector("body").prepend(para1);
+
+
+        //Insère para1 avant la balise "script" qui est ciblée dans les arguments
+
+        // document.querySelector("body").insertBefore(para1,document.querySelector("script"));
+        //----------ou -------
+        let script = document.querySelector("script")
+        // document.querySelector("body").insertBefore(para1, script);
+            
+        //Insérer para2 entre le para1 et la balise script
+        
+            document.querySelector("body").insertBefore(para2, script);
+
+        //créer et insérer un para3 entre para1 et para2
+
+        let para3 = document.createElement("p");
+        para3.setAttribute("class", "paragraphe");
+        para3.textContent="Bonjour, je viens m'incruster entre vous deux !";
+        document.querySelector("body").insertBefore(para3, para2);
+    
+        para1.classList.add("classe1");
+        para2.classList.add("classe2");
+        para3.classList.toggle("classe3");
+        
+    </script>
+</body>
+</html>

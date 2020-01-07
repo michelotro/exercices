@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+</head>
+<body>
+    <h1>Ajax</h1>
+
+    <script>
+        // je crée un OBJET XMLHttpRequest (xhr)
+        let maRequete = new XMLHttpRequest();
+
+        //J'initialise ma requête avec la méthode open() pour récupérer le fichier fromage.json
+        maRequete.open("GET", 'fromage.json');
+
+        //Je veux une réponse au format Json
+        maRequete.responseType = "json";
+
+        //J'envoie la requête
+        maRequete.send();
+
+        //dès que la réponse est reçue
+        maRequete.onload =function(){
+            console.log("Sans stringify", maRequete.response);
+            
+            // console.log(JSON.stringify(maRequete.response));
+            // console.log(JSON.stringify(maRequete.response.length));
+
+            let tab = maRequete.response;
+                console.log(tab);
+                
+            for (let e of tab) {
+                // console.log(e.nom, e.type, e.pays, e.classement);
+                let f = new Fromage(e.nom, e.type, e.pays, e.classement);
+                f.afficher();
+                console.log(f);
+            }
+        }
+        class Fromage{
+            constructor(n, t, p, c){
+                this.nom = n;
+                this.type = t;
+                this.pays = p;
+                this.classement = c;
+                // this.afficher();
+            }
+            afficher(){
+                let titre = document.createElement("h2");
+                let para1 = document.createElement("h3");
+                let para2 = document.createElement("h4");
+                let para3 = document.createElement("p");
+
+                titre.textContent = `Nom : ${this.nom}`;
+                para1.textContent = `Type : ${this.type}`; 
+                para2.textContent = `Origine : ${this.pays}`;
+                para3.textContent = `Classement : ${this.classement}`;
+                
+                
+                document.body.appendChild(titre); 
+                document.body.appendChild(para1);
+                document.body.appendChild(para2);
+                document.body.appendChild(para3);
+                
+            }
+            
+        }
+        
+        
+        
+    
+    </script>
+</body>
+</html>

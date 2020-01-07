@@ -13,15 +13,18 @@
         console.log("devinez le nombre mystère");
         
         let solution = Math.floor(Math.random()*100) + 1;
+        let nbessai = "";
         
         for (let nbessai = 0; nbessai <= 10; nbessai++) { // je lance la boucle, où nbessai <= au nombre d'essai voulu
+
     let essai = Number(prompt("Entrez un nombre entre 1 et 100 pour deviner le nombre aléatoire."));
+
     if (essai === solution) {
         console.log("Gagné !!!");
-		console.log("Vous avez trouvé en " + nbessai + " essai(s)")
+		console.log("Vous avez trouvé en " + nbessai + " essais")
         break; // si la réponse est trouvé, la boucle s'arrête et la console l'affiche, en précisant le nombre d'essai nécessaires.
     } 
-    else if ( essai < solution){ // comparent la valeur "essai" à la valeur "solution"
+    else if ( essai < solution){ // compare la valeur "essai" à la valeur "solution"
             console.log(essai + " est trop petit");
     } 
     else {
@@ -29,7 +32,7 @@
     }
 }
 if (nbessai === 10){
-    console.log("Perdu !!! La réponse est : " + solution);
+    console.log("Perdu !!! La réponse était : " + solution);
 }
 
 

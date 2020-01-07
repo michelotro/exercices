@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Identifiez-vous</h1>
+
+    <script>
+
+
+        let id = prompt("Veuillez entrer votre identifiant.");
+        let pass;
+        let nom = "moi";
+        let mdp = "mdp";
+        let essaiId;
+        let essaiPass;
+
+        // if (id != nom){
+        //     do{
+        //         id = prompt("ID érroné, recommencez");
+        //     }
+        //     while (id != nom);
+        // }
+
+        // let pass = prompt("Entrez maintenant votre mot de passe.");
+
+        // if (pass != mdp){
+        //     do{
+        //         pass = prompt("mot de passe érroné, recommencez");
+        //     }
+        //     while (pass != mdp);
+        // }
+
+        //     alert("Bravo !");
+
+        for (essaiId = 2; essaiId > 0; essaiId--) {
+
+            if (id == nom) {
+                let pass = prompt("Entrez maintenant votre mot de passe.");
+                break;
+            }
+            else {
+                id = prompt(`ID érroné, il vous reste ${essaiId} essai`);
+            }
+        };
+        
+        if (essaiId == 0) {
+            alert('Trop de tentatives');
+        }
+
+        for (essaiPass = 2; essaiPass > 0; essaiPass--) {
+            let pass = prompt("Entrez maintenant votre mot de passe.");
+            if (pass == mdp) {
+                alert('Bravo !');
+
+            }
+            else {
+                pass = prompt(`mot de passe érroné, il vous reste ${essaiPass} essai`);
+            }
+        };
+        if (essaiPass == 0) {
+            alert('Trop de tentatives');
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

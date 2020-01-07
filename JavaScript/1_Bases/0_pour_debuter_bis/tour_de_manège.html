@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tour de manège</title>
+</head>
+<body>
+    <h1>C'est parti mon KIKIIIIIII</h1>
+    
+
+    <script>
+        
+      let tour ;
+      let ticket = prompt("Combien de tickets ?");
+
+      for(let i = 0; i < ticket; i++){
+
+        for (tour = 1; tour < 11; tour++) {
+            if (tour == 1) {
+                console.log("le manège démarre");                
+            }
+            console.log(`c'est le tour n° ${tour}`); 
+            if (tour == 10) {
+            console.log("Le manège s'arrête");            
+            }         
+        };
+      };
+        
+
+
+    </script>
+</body>
+</html>

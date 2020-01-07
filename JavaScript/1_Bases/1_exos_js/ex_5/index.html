@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        @keyframes rotation {
+            0%{ 
+                position: absolute;
+                transform-origin: left;
+                transform: rotate(0deg);  
+            }
+            10%{
+                transform: rotate(150deg);
+                color: rgb(255, 217, 0);
+            }
+            20%{
+                transform: rotate(25deg);
+                color: rgb(0, 255, 0);   
+            }
+            40%{
+                transform: rotate(130deg);
+                color: rgb(132, 0, 255);
+            }
+            60%{
+                transform: rotate(50deg);
+                color: rgb(255, 0, 0);
+                
+            }
+            80%{
+                transform: rotate(110deg);
+                color: rgb(0, 255, 255);
+            }
+            100%{
+                transform: rotate(90deg);
+                color: rgb(0, 0, 255);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><span>Survol</span></h1>
+    
+    <script>
+        document.getElementsByTagName("h1")[0].style.color = "green";
+        document.getElementsByTagName("h1")[0].style.textAlign = "center";
+        document.querySelector("span").onmouseenter = function () 
+        {
+            this.style.color ="red";    
+        }
+        document.querySelector("span").onmouseleave = function () 
+        {
+            this.style.color ="green";    
+        }
+
+        document.querySelector("span").onclick = function () 
+        {
+            this.style.animation = "rotation 5s .5s linear ";    
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex_4</title>
+</head>
+<body>
+    <script>
+
+        let photo = document.createElement("img");
+        photo.id= "photo1" ;
+        photo.src = "images/moto1.jpg" ; 
+        document.body.appendChild(photo);
+
+        let src1 = photo.src ;
+        
+        console.log(src1);
+        
+        photo.addEventListener("click", function () {
+
+            if (photo.src == src1) {
+                document.getElementById("photo1").src = "images/moto2.jpg" ;
+            } 
+            
+            else {
+                document.getElementById("photo1").src = "images/moto1.jpg";
+            }
+        });
+
+        photo.addEventListener("click", function () {
+
+                document.getElementById("photo1").style.transition = " 1s" ;
+                document.getElementById("photo1").style.borderRadius = "30%"; 
+        });
+
+        document.querySelector("img").onmouseleave = function () 
+        {
+            this.style.borderRadius ="0%";    
+        }
+        
+            
+        
+            </script>
+</body>
+</html>
