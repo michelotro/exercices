@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -6,26 +7,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="logo" class="navbar-brand" href="index.html"><img src="images/bird.jpg"  alt="logo" width="50px;"></a>
+                <a id="logo" class="navbar-brand" href=<?= lienIndex?>><img <?= imgCircle?> src=<?= images."bird.jpg" ?> alt="logo" width="50px;"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.php">ACCUEIL</a>
+                        <a href=<?= lienIndex?>>ACCUEIL</a>
                     </li>
                     <li>
-                        <a href="produits.php">NOS PRODUITS</a>
+                        <a href=<?= lienProduits?>>NOS PRODUITS</a>
                     </li>
                     <li>
-                        <a href="blog.php">BLOG</a>
+                        <a href=<?=lienBlog?>>BLOG</a>
                     </li>
                     <li>
-                        <a href="contact.php">CONTACT</a>
+                        <a href=<?= lienContact?>>CONTACT</a>
                     </li>
                     <li>
-                        <a href="about.php">ABOUT</a>
+                        <a href=<?= lienAbout?>>A PROPOS</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    
