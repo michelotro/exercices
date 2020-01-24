@@ -1,18 +1,4 @@
-    <?php
-        include ('../../config/variablesPHP/variables.php');
-        ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-    <?php include (head); ?>
-
-<body>
-    
-    <!-- Navbar -->
-<?php
-    include (navbar);
-?>
     <!-- First Container -->
     <div class="container-fluid bg-1">
         <h3 class="margin text-center">Contactez-nous</h3>
@@ -36,12 +22,3 @@
             <button type="submit" class="btn btn-default">Envoyer</button>
         </form>
     </div>
-
-    <!-- Footer -->
-    <?php
-        include footer;
-    ?>
-
-</body>
-
-</html>

@@ -1,13 +1,4 @@
-<?php include ('../../config/variablesPHP/variables.php'); ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-    <?php include head; ?>
-
-<body>
-    <!-- Navbar -->
-    <?php include navbar; ?>
 
     <!-- Third Container (Grid) -->
     <div class="container-fluid bg-1 text-center">
@@ -19,8 +10,3 @@
             include produits;
         ?>
     </div>
-    <!-- Footer -->
-    <?php include footer; ?>
-    
-</body>
-</html>
